@@ -43,10 +43,12 @@ papers, the first and last authors will decide on the position.s
 This section describes the general steps to make sure that your contribution is
 integrated rapidly. The general workflow is as follows:
 
-1. Fork the repository
+1. Fork the repository (see *Branches, etc.* below)
 2. Create an *explicitely named branch*
 3. Create a pull request *even if you haven't pushed code yet*
 4. Be as explicit as possible on your goals
+
+### Pull requests
 
 Creating a pull request *before* you push any code will signal that you are
 interested in contributing to the project. Once this is done, push often, and be
@@ -61,6 +63,17 @@ is:
 3. Limited in scope - it should ideally not span more than a handful of files
 
 This will ensure that your contribution is rapidly reviewed and evaluated.
+
+### Branches, etc.
+
+The `master` branch is *always* the currently stable, build passing, adequately
+covered version. Ideally, no one should ever push directly into master. The
+reference branch for development is `dev`.
+
+For the development of new features, it is generally recommended to fork the
+`master` branch, and submit your pull request to the `dev` branch. For
+"hotfixes" (changes that address issues), forking either branch is fine, and
+we'll take care of pulling the changes into `dev` and/or `master` as needed.
 
 ## Tests and coverage
 
@@ -82,6 +95,12 @@ Good tests make sure that:
 1. The code works as it should
 2. The code breaks as it should (see *Program defensively* below)
 3. Functions play nicely together
+
+Before merging the content of *any* pull request, the following tests are done:
+
+1. The branch to be merged *from* passes the build
+2. The future branch (*i.e.* with the changeset) passes the build
+3. The code coverage does not decrease by more than (usually) 10%
 
 ## Coding practices
 
@@ -146,7 +165,7 @@ start. Using `i`, `j`, `k` for loops is, as usual, fine.
 
 Write some. `R` packages, must be compiled with `roxygen`, `python` code must
 have docstrings for all documentable objects, and `Julia` functions must be
-documented using `Docile.jl` and `Lexicon.jl`.
+documented using `Docile.jl` and `Lexicon.jl`.##
 
 There are three levels of documentation: the API documentation (which will be
 generated from the docstrings), the documentation for fellow developers (which
