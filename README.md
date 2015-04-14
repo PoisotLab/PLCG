@@ -5,9 +5,18 @@ of the [Poisot lab of computational ecology][pl], Université de Montréal. It
 should be followed by lab members (at all times), as well as people with
 suggested added features, or willing to contribute enhancement or bug fixes.
 
+[pl]: http://poisotlab.io/
+
 Edits to this document must be suggested as pull requests on the github project
 located at `https://github.com/PoisotLab/PLCG`, and not made on the document
 itself.
+
+It is suggested to include this file to your projects via a `Makefile` rule:
+
+``` makefile
+CONTRIBUTING.md:
+	wget -O $@ https://raw.githubusercontent.com/PoisotLab/PLCG/master/README.md
+```
 
 ## Issues
 
@@ -140,12 +149,12 @@ have docstrings for all documentable objects, and `Julia` functions must be
 documented using `Docile.jl` and `Lexicon.jl`.
 
 There are three levels of documentation: the API documentation (which will be
-generated from the docstrings), the documentation for fellow devellopers (which
+generated from the docstrings), the documentation for fellow developers (which
 resides ideally entirely in the comments), and documentation for the end users.
 Your pull request must include relevant changes and additions to the
 documentation.
 
-### Versionning
+### Versioning
 
 We use [semantic versioning][sv] (`major`.`minor`.`patch`). Anything that adds
 no new feature should increase the `patch` number, new non-API-breaking changes
@@ -154,5 +163,4 @@ of a higher level resets the number after it (*e.g*, `0.3.1` becomes `1.0.0` for
 the first major release). It is highly recommended that you do not start working
 on API-breaking changes without having received a go from us first.
 
-[pl]: http://poisotlab.io/
 [sv]: http://semver.org/
