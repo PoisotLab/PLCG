@@ -15,7 +15,7 @@ It is suggested to include this file to your projects via a `Makefile` rule:
 
 ``` makefile
 CONTRIBUTING.md:
-	wget -O $@ https://raw.githubusercontent.com/PoisotLab/PLCG/master/README.md
+  wget -O $@ https://raw.githubusercontent.com/PoisotLab/PLCG/master/README.md
 ```
 
 ## Issues
