@@ -18,6 +18,15 @@ CONTRIBUTING.md:
   wget -O $@ https://raw.githubusercontent.com/PoisotLab/PLCG/master/README.md
 ```
 
+## General code of behavior
+
+We follow the [Contributor Covenant][cc] and [The No Asshole Rule][nar].
+An amazing technical or scientific contribution is *no* excuse for creating
+a toxic environment.
+
+[cc]: http://contributor-covenant.org/version/1/2/0/
+[nar]: https://en.wikipedia.org/wiki/The_No_Asshole_Rule
+
 ## Issues
 
 Reporting issues is the simplest and most efficient way to contribute. A useful
