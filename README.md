@@ -13,9 +13,9 @@ itself.
 
 It is suggested to include this file to your projects via a `Makefile` rule:
 
-``` makefile
+``` make
 CONTRIBUTING.md:
-  wget -O $@ https://raw.githubusercontent.com/PoisotLab/PLCG/master/README.md
+    wget -O $@ https://raw.githubusercontent.com/PoisotLab/PLCG/master/README.md
 ```
 
 ## Issues
@@ -44,7 +44,7 @@ This section describes the general steps to make sure that your contribution is
 integrated rapidly. The general workflow is as follows:
 
 1. Fork the repository (see *Branches, etc.* below)
-2. Create an *explicitely named branch*
+2. Create an *explicitly named branch*
 3. Create a pull request *even if you haven't pushed code yet*
 4. Be as explicit as possible on your goals
 
