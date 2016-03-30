@@ -18,6 +18,15 @@ CONTRIBUTING.md:
     wget -O $@ https://raw.githubusercontent.com/PoisotLab/PLCG/master/README.md
 ```
 
+## General code of behavior
+
+We follow the [Contributor Covenant][cc] and [The No Asshole Rule][nar].
+An amazing technical or scientific contribution is *no* excuse for creating
+a toxic environment.
+
+[cc]: http://contributor-covenant.org/version/1/2/0/
+[nar]: https://en.wikipedia.org/wiki/The_No_Asshole_Rule
+
 ## Issues
 
 Reporting issues is the simplest and most efficient way to contribute. A useful
@@ -74,6 +83,25 @@ For the development of new features, it is generally recommended to fork the
 `master` branch, and submit your pull request to the `dev` branch. For
 "hotfixes" (changes that address issues), forking either branch is fine, and
 we'll take care of pulling the changes into `dev` and/or `master` as needed.
+
+### Of emojis
+
+[Atom's][atom] guideline suggest the use of emojis to easily identify what is
+the purpose of each commit. This is a good idea and should be followed, and it
+also saves a few characters from the commit first line. Specifically, prepend
+your commits as follow
+
+| What the commit is about |       emoji        | example                                     |
+|:-------------------------|:------------------:|:--------------------------------------------|
+| Add test                 | :white_check_mark: | :white_check_mark: wget JSON resource       |
+| Fix bug                  |       :bug:        | :bug: mean fails if NA                      |
+| Documentation            |  :page_facing_up:  | :page_facing_up: null models wrapper        |
+| New data                 |    :bar_chart:     | :bar_chart: example pollination network     |
+| Improve performance      |      :clock2:      | :clock2: parallelizes null model by default |
+| New feature              |      :metal:       | :metal: (anything amazing)                  |
+| Upcoming release         |      :package:     | :package: v1.0.2                            |
+
+[atom]: https://github.com/atom/atom/blob/master/CONTRIBUTING.md
 
 ## Tests and coverage
 
