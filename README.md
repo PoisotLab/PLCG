@@ -220,9 +220,9 @@ base docstrings, and `jldoctests` wherever possible.
 
 There are three levels of documentation: the API documentation (which will be
 generated from the docstrings), the documentation for fellow developers (which
-resides ideally entirely in the comments), and documentation for the end users.
-Your pull request must include relevant changes and additions to the
-documentation.
+resides ideally entirely in the comments), and documentation for the end users
+(which include use cases, *i.e.* how is the feature use in the real world). Your
+pull request must include relevant changes and additions to the documentation.
 
 ### Versioning
 
