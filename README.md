@@ -114,6 +114,7 @@ your commits as follow (adapted from [these guidelines]).
 | Documentation             | `:books:`          | :books: null models wrapper                    |
 | Performance improvement   | `:racehorse:`      | :racehorse: parallelizes null model by default |
 | Upcoming release          | `:package:`        | :package: v1.0.2                               |
+| Deprecation               | `:boom:`           | :boom: old plot function                       |
 
 [atom]: https://github.com/atom/atom/blob/master/CONTRIBUTING.md
 [these guidelines]: https://github.com/dannyfritz/commit-message-emoji
